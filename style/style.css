@@ -20,13 +20,6 @@ main{
     background-color: #1e2d3b;
 }
 
-.charge{
-    height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* CARD */
 .help{
     width: 220px;
@@ -34,7 +27,7 @@ main{
 }
 
 img{
-    width: 170px;
+    width: 180px;
 }
 
 p{

@@ -71,6 +71,3 @@ $arr_album = [
         "year" => "1987"
     ]
 ];
-
-header('Content-Type: application/json');
-echo json_encode($arr_album);
