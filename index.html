@@ -33,10 +33,10 @@
         <div class="row row-cols-lg-5 pt-5 pb-4">
             <div v-for="element in arrAlbumSong" class="card-song col-6 col-md-4 col-lg mb-5 text-center d-flex justify-content-center">
                 <div class=" help pb-5">
-                    <img class="img-fluid pt-4" :src="{{ element.poster }}" :alt="{{ element.title }}">
-                    <h2 class="text-white text-uppercase fs-4 pt-3">{{ title }}</h2>
-                    <p class="fs-5 text-secondary">{{ author }}</p>
-                    <p class="fs-6 text-secondary">{{ year }}</p>
+                    <img class="img-fluid pt-4" src="{{ element.poster }}" alt="{{ element.title }}">
+                    <h2 class="text-white text-uppercase fs-4 pt-3">{{ element.title }}</h2>
+                    <p class="fs-5 text-secondary">{{ element.author }}</p>
+                    <p class="fs-6 text-secondary">{{ element.year }}</p>
                 </div>
           </div>
         </div>
