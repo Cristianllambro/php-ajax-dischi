@@ -4,6 +4,6 @@ new Vue ({
         arrAlbumSong: [],
     },
     created () {
-        axios.get("./db/api_js.php").then((response) => {this.arrAlbumSong = response.data.response});
+        axios.get("./db/api_js.php").then((response) => {this.arrAlbumSong = response.data});
     },
 })
