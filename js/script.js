@@ -1,9 +1,9 @@
-const app = new Vue ({
+new Vue ({
     el: '#app',
     data: {
-        arrAlbumSong: null,
+        arrAlbumSong: [],
     },
     created () {
-            axios.get("../db/script.js").then((response) => {this.arrAlbumSong = response.data.response});
+        axios.get("./db/api_js.php").then((response) => {this.arrAlbumSong = response.data.response});
     },
 })

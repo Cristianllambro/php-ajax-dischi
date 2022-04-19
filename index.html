@@ -19,7 +19,7 @@
                 ICONA
             </div>
             <div class="select-fix pe-3">
-                <select class="form-select" aria-label="Default select example" v-model="selectGenere" @change="$emit('genSearch', selectGenere)">
+                <select class="form-select" aria-label="Default select example">
                     <option value="">Tutti i Generi</option>
                     <option value="Rock">Rock</option>
                     <option value="Pop">Pop</option>
@@ -33,7 +33,7 @@
         <div class="row row-cols-lg-5 pt-5 pb-4">
             <div v-for="element in arrAlbumSong" class="card-song col-6 col-md-4 col-lg mb-5 text-center d-flex justify-content-center">
                 <div class=" help pb-5">
-                    <img class="img-fluid pt-4" src="{{ element.poster }}" alt="{{ element.title }}">
+                    <img class="img-fluid pt-4" :src="element.poster" :alt="element.title">
                     <h2 class="text-white text-uppercase fs-4 pt-3">{{ element.title }}</h2>
                     <p class="fs-5 text-secondary">{{ element.author }}</p>
                     <p class="fs-6 text-secondary">{{ element.year }}</p>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
 </body>
